@@ -1,11 +1,12 @@
 num = int(input)
-def all_single(numbers):
-    set1 = set(numbers)
-    unique = len(numbers)-len(set1)
-    not_unique = len(numbers)-unique
-    return not_unique
+def counting_single_nums(num):
+    x = (list(str(num)))
+    cnt = 0
+    for i in range(0, len(x)-1):
+        if x[i] != x[i + 1]:
+            cnt += 1
+            i += 1
+    print(cnt)
 
-numbers = '122345'
-print(all_unique(numbers))
-
-2 4 4 5
+num = int(input())
+counting_single_nums(num)
