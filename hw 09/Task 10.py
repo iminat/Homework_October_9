@@ -1,7 +1,10 @@
 def all_unique(numbers):
-    set = (numbers)
-    if len(numbers) == len(set):
-        print('True')
+    set1 = set(numbers)
+    if len(numbers) == len(set1):
+        return 'True'
+    else:
+        return 'False'
 
-numbers = '9489374529'
-(all_unique(numbers))
+
+numbers = '9483752'
+print(all_unique(numbers))
